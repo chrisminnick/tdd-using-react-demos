@@ -11,5 +11,15 @@
   9. run test and watch it succeed
   10. write test: App.js should display a map
   11. npm test and watch it fail
+  Note that it fails because of a problem with the child. problem?
+  12. do I need to start doing shallow render with enzyme here?
   12. put a map in App.js
   13. run test and watch it succeed
+  14. add some styles to make map look like something
+  15. write a test that there should be a search box above the map
+  16. npm test and watch it fail
+  17. write a test that SearchBox should render
+  18. make a new SearchBox component, put it in place on App
+  19. Run test, watch things work.
+  20. Style the searchbox
+  21. 
