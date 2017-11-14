@@ -6,7 +6,7 @@ class MapBox extends Component {
         return (
             <div className="MapBox">
 
-                <p>Map goes here</p>
+                <p><img src={"../images/" + this.props.shopMap} alt="the map"/></p>
 
             </div>
         );

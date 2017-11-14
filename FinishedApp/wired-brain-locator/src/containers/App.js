@@ -9,10 +9,18 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            shops: ['location1', 'location2']
+            shops: ['location1', 'location2'],
+            currentMap: 'none.png'
+        };
+        this.loadMap = this.loadMap.bind(this);
+    }
+    loadMap(e){
+        if (e.target.value === 'location1'){
+            this.setState({currentMap: 'portland.png'});
+        } else {
+            this.setState({currentMap: 'astoria.png'});
         }
     }
-
     render() {
         return (
             <div className="App">
@@ -20,8 +28,8 @@ class App extends Component {
                     <img src={logo} className="App-logo" alt="logo"/>
                     <h1 className="App-title">Store Locator</h1>
                 </header>
-                <ButtonBar shops={this.state.shops} />
-                <MapBox />
+                <ButtonBar loadMap = {this.loadMap} shops={this.state.shops} />
+                <MapBox shopMap = {this.state.currentMap} />
 
             </div>
         );
