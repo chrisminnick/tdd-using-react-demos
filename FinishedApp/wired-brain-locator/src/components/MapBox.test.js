@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { shallow } from 'enzyme';
 import MapBox from './MapBox';
 
 it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<MapBox />, div);
+    const component = shallow(<MapBox />);
+    expect(component).toExist();
 });
