@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import MapBox from '../components/MapBox.js';
 import ButtonBar from '../components/ButtonBar.js';
+import {loadMap} from '../state-functions.js';
 
 import logo from '../images/wired-brain-coffee-logo.png';
 import './App.css';
@@ -12,15 +13,9 @@ class App extends Component {
             shops: ['location1', 'location2'],
             currentMap: 'none.png'
         };
-        this.loadMap = this.loadMap.bind(this);
+        this.loadMap = loadMap.bind(this);
     }
-    loadMap(e){
-        if (e.target.value === 'location1'){
-            this.setState({currentMap: 'portland.png'});
-        } else {
-            this.setState({currentMap: 'astoria.png'});
-        }
-    }
+
     render() {
         return (
             <div className="App">
