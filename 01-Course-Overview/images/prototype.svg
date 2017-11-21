@@ -1,0 +1,15 @@
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+    <g>
+        <title>Layer 1</title>
+        <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_7" y="162" x="230" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">store 1</text>
+        <rect id="svg_1" height="396" width="494" y="56" x="83" stroke-width="5" stroke="#000000" fill="#ffffff"/>
+        <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_2" y="109" x="329" stroke-width="0" stroke="#000000" fill="#000000">store locator</text>
+        <rect id="svg_3" height="43" width="139" y="134" x="159" stroke-width="5" stroke="#000000" fill="#ffffff"/>
+        <rect id="svg_4" height="47" width="165" y="133" x="365" stroke-width="5" stroke="#000000" fill="#ffffff"/>
+        <text id="svg_8" xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" y="164.5" x="440.007813" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">store 1</text>
+  <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_9" y="164" x="223" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">store 2</text>
+        <rect id="svg_11" height="232" width="371" y="196" x="160" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="#ffffff"/>
+        <text xml:space="preserve" text-anchor="middle" font-family="serif" font-size="24" id="svg_12" y="315" x="340" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#000000" fill="#000000">Map Here</text>
+    </g>
+</svg>
