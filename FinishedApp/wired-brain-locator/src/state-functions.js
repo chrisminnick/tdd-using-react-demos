@@ -1,5 +1,5 @@
 export function loadMap(e) {
-    if (e.target.value === 'location1'){
+    if (e.target.value === 'Portland'){
 
         this.setState({currentMap: 'portland.png'});
     } else {

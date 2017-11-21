@@ -1,3 +1,7 @@
 .MapBox {
   border: 1px solid black;
 }
+
+.MapBox > p > img {
+  width: 400px;
+}

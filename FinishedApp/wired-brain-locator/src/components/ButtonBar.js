@@ -11,7 +11,7 @@ class ButtonBar extends Component {
         const buttons = shopArray.map((shop,id) => {
             return (
                 <LocationButton
-                    shop = {shop}
+                    shop = {shop.location}
                     key = {id}
                     changeMap = {this.props.loadMap}
                 />);

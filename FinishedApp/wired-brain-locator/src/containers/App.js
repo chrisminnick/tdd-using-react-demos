@@ -10,7 +10,14 @@ class App extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            shops: ['location1', 'location2'],
+            shops: [{
+                        'location'  :'Portland',
+                        'address'   :'123 Portland Dr.'
+                    },
+                    {
+                        'location'  :'Astoria',
+                        'address'   :'123 Astoria Dr.'
+                    }],
             currentMap: 'none.png'
         };
         this.loadMap = loadMap.bind(this);
@@ -25,6 +32,7 @@ class App extends Component {
                 </header>
                 <ButtonBar loadMap = {this.loadMap} shops={this.state.shops} />
                 <MapBox shopMap = {this.state.currentMap} />
+
 
             </div>
         );
