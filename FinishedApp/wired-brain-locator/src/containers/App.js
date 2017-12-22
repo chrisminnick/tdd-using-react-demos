@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import MapBox from '../components/MapBox.js';
+import StoreLocator from '../components/MapBox.js';
 import ButtonBar from '../components/ButtonBar.js';
 import {loadMap} from '../state-functions.js';
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import StoreLocator from '../StoreLocator';
+import Map from '../Map';
 
 it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<StoreLocator />, div);
+    ReactDOM.render(<Map />, div);
 });
