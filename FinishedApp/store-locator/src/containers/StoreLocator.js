@@ -15,10 +15,6 @@ class StoreLocator extends Component {
                 'address'   : '123 Astoria Dr.'
             },
             {
-                'location'  : 'Corvalis',
-                'address'   : '123 Corvalis Dr.'
-            },
-            {
                 'location'  : '',
                 'address'   : ''
             }];
