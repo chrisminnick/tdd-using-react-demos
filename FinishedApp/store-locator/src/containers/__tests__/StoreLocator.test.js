@@ -1,6 +1,7 @@
 import React from 'react';
 import {shallow} from 'enzyme';
 import StoreLocator from '../StoreLocator';
+import mockAxios from 'jest-mock-axios';
 
 describe('StoreLocator', function () {
 
@@ -8,18 +9,13 @@ describe('StoreLocator', function () {
     beforeEach(() => {
         mountedStoreLocator = shallow(<StoreLocator />);
     });
+    afterEach(() => {
+        // cleaning up the mess left behind the previous test
+        mockAxios.reset();
+    });
 
     //TODO: rewrite using this https://www.npmjs.com/package/jest-mock-axios
 
-    jest.mock('axios', ()=> {
-        const exampleShopData = [
-            {"location":"test location","address":"test address"}
-        ];
-
-        return {
-            get: jest.fn(() => Promise.resolve(exampleShopData)),
-        }
-    });
 
 
     it('is an instance', ()=>{
@@ -30,14 +26,20 @@ describe('StoreLocator', function () {
     const axios = require('axios');
 
     it('fetches articles on #componentDidMount', ()=>{
-        mountedStoreLocator.instance().componentDidMount().then(()=> {
-            //expect(axios.get).toHaveBeenCalled();
-            //expect(axios.get).toHaveBeenCalledWith('http://localhost:3000/data/shops.json');
+        mountedStoreLocator.instance().componentDidMount();
+        mockAxios.mockResponse({data: {"shops":
+            [{
+                "location"  : "test location",
+                "address"   : "test address"
+            }]
+        }});
+
+            expect(mockAxios.get).toHaveBeenCalled();
+            expect(mockAxios.get).toHaveBeenCalledWith('http://localhost:3000/data/shops.json');
             expect(mountedStoreLocator.state()).toHaveProperty('shops', [
                 {"location": "test location", "address": "test address"}
             ]);
-            done();
-        });
+
     });
 
 

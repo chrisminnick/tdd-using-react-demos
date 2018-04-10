@@ -31,7 +31,7 @@ class StoreLocator extends Component {
     }
     componentDidMount(){
 
-        return axios.get('http://localhost:3000/data/shops.json',{adapter: require('axios/lib/adapters/http'),}).then(response => {
+        return axios.get('http://localhost:3000/data/shops.json').then(response => {
             this.setState({
                 shops:response.data.shops
             })
